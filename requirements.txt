@@ -1,0 +1,19 @@
+# Core dependencies for offline speech recognition system
+openai-whisper==20231117
+numpy==1.24.3
+torch==2.0.1
+torchaudio==2.0.2
+sounddevice==0.4.6
+soundfile==0.12.1
+scipy==1.11.4
+
+# Speaker identification
+speechbrain==0.5.16
+pyannote.audio==3.1.1
+
+# Utilities
+python-dotenv==1.0.0
+pyyaml==6.0.1
+
+# Build and packaging
+pyinstaller==6.3.0

@@ -1,0 +1,35 @@
+# System configuration settings
+
+# Audio input settings
+audio:
+  sample_rate: 16000
+  channels: 1
+  device: null  # null for default device
+  chunk_duration: 5  # seconds
+  silence_threshold: 0.01
+
+# Whisper model settings
+whisper:
+  model_size: "base"  # tiny, base, small, medium, large
+  device: "cpu"  # cpu or cuda
+  language: "en"  # or null for auto-detection
+  
+# Speaker identification settings
+speaker_id:
+  enabled: true
+  model: "speechbrain/spkrec-ecapa-voxceleb"
+  threshold: 0.75
+
+# Command parsing settings
+commands:
+  fuzzy_matching: true
+  confidence_threshold: 0.6
+  
+# Logging settings
+logging:
+  enabled: true
+  log_dir: "logs"
+  log_level: "INFO"
+  log_audio: false
+  log_transcripts: true
+  log_commands: true

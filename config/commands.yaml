@@ -1,0 +1,37 @@
+# Extendable command configuration
+# Format: "recognized text": "command action"
+
+commands:
+  # Movement commands
+  "move forward": "MOVE_FORWARD"
+  "move backward": "MOVE_BACKWARD"
+  "move backwards": "MOVE_BACKWARD"
+  "turn left": "TURN_LEFT"
+  "turn right": "TURN_RIGHT"
+  "stop": "STOP"
+  "halt": "STOP"
+  
+  # Navigation commands
+  "go to kitchen": "NAVIGATE_KITCHEN"
+  "go to bedroom": "NAVIGATE_BEDROOM"
+  "go to living room": "NAVIGATE_LIVING_ROOM"
+  "return home": "RETURN_HOME"
+  
+  # Action commands
+  "pick up": "PICK_UP"
+  "put down": "PUT_DOWN"
+  "open gripper": "OPEN_GRIPPER"
+  "close gripper": "CLOSE_GRIPPER"
+  
+  # System commands
+  "status": "GET_STATUS"
+  "battery level": "GET_BATTERY"
+  "shutdown system": "SHUTDOWN"
+  "restart system": "RESTART"
+
+# Command aliases (optional)
+aliases:
+  "go forward": "move forward"
+  "go back": "move backward"
+  "left turn": "turn left"
+  "right turn": "turn right"
